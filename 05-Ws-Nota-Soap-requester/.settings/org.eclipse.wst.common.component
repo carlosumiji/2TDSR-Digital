@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="02-Ws-Soap-Correios">
+    <wb-module deploy-name="05-Ws-Nota-Soap-requester">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/02-Ws-Soap-Correios/build/classes"/>
-        <property name="context-root" value="02-Ws-Soap-Correios"/>
+        <property name="java-output-path" value="/05-Ws-Nota-Soap-requester/build/classes"/>
+        <property name="context-root" value="05-Ws-Nota-Soap-requester"/>
     </wb-module>
 </project-modules>
