@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="05-WS-Soap-Provider" path="/05-WS-Soap-Provider" reloadable="true" source="org.eclipse.jst.jee.server:05-WS-Soap-Provider"/><Context docBase="06-Estoque-ws" path="/06-Estoque-ws" reloadable="true" source="org.eclipse.jst.jee.server:06-Estoque-ws"/><Context docBase="02-Ws-Soap-Correios" path="/02-Ws-Soap-Correios" reloadable="true" source="org.eclipse.jst.jee.server:02-Ws-Soap-Correios"/><Context docBase="05-Ws-Nota-Soap-requester" path="/05-Ws-Nota-Soap-requester" reloadable="true" source="org.eclipse.jst.jee.server:05-Ws-Nota-Soap-requester"/></Host>
+      <Context docBase="05-Ws-Nota-Soap-requester" path="/05-Ws-Nota-Soap-requester" reloadable="true" source="org.eclipse.jst.jee.server:05-Ws-Nota-Soap-requester"/><Context docBase="05-WS-Soap-Provider" path="/05-WS-Soap-Provider" reloadable="true" source="org.eclipse.jst.jee.server:05-WS-Soap-Provider"/><Context docBase="06-Ws-Estoque-Requester" path="/06-Ws-Estoque-Requester" reloadable="true" source="org.eclipse.jst.jee.server:06-Ws-Estoque-Requester"/><Context docBase="02-Ws-Soap-Correios" path="/02-Ws-Soap-Correios" reloadable="true" source="org.eclipse.jst.jee.server:02-Ws-Soap-Correios"/><Context docBase="07-WS-Restful-Server" path="/07-WS-Restful-Server" reloadable="true" source="org.eclipse.jst.jee.server:07-WS-Restful-Server"/><Context docBase="06-Estoque-ws" path="/06-Estoque-ws" reloadable="true" source="org.eclipse.jst.jee.server:06-Estoque-ws"/></Host>
     </Engine>
   </Service>
 </Server>

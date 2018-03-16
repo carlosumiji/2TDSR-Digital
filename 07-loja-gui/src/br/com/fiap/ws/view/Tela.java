@@ -9,6 +9,7 @@ import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.wb.swt.SWTResourceManager;
 
+import br.com.fiap.inventario.EstoqueBOStub.ProdutoTO;
 import br.com.fiap.service.EstoqueService;
 
 import org.eclipse.swt.events.SelectionAdapter;
@@ -83,12 +84,12 @@ public class Tela {
 		btnPesquisar.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				int codigo = txtCodigo.getText();
+				String codigo = txtCodigo.getText();
 				
 				try {
 					EstoqueService service = new EstoqueService();
-					String produto = service.consultaProduto(codigo);
-					lblProduto.setText(produto);
+					//ProdutoTO produto = service.consultaProduto(codigo);
+					//lblProduto.setText(produto);
 				} catch (Exception e1) {
 					
 					e1.printStackTrace();
