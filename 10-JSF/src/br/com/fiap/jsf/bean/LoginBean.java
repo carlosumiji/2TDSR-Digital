@@ -1,8 +1,8 @@
 package br.com.fiap.jsf.bean;
 
-import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedBean;// import correto
 
-@ManagedBean
+@ManagedBean //atenção ao import
 public class LoginBean {
 
 	private String nome ;

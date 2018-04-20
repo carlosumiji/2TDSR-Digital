@@ -14,8 +14,8 @@ import br.com.fiap.ws.to.Produto;
 
 public class ProdutoService {
 
-	private Client client = Client.create();
-	private static final String URL = "http://10.20.72.16:8080/07-WS-Restful-Server/rest/produto/";
+	private Client client = Client.create();//para trolar no local host 10.20.72.16 ultimo digito e o numero da maquina
+	private static final String URL = "http://localhost:8080/07-WS-Restful-Server/rest/produto/";
 	
 	public void remover(int codigo) throws Exception {
 		WebResource w = client.resource(URL)

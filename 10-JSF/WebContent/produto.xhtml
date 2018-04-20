@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Lista de Produtos</title>
+	<h:outputStylesheet library="css" name="bootstrap.min.css"/>
+	<h:outputScript library="js" name="jquery-3.3.1.min.js"/>
+	<h:outputScript library="js" name="bootstrap.min.js"/>
+	<title>Cadastro de Produto</title>
+</h:head>
+<h:body>
+<div class="container"> 
+	<h1>Cadastro de Produto</h1>
+	<h:form>
+		<h:inputHidden value="#{produtoBean.produto.codigo}" />
+		<div class="form-group">
+			<h:outputLabel value="Nome" for="nome" />
+			<h:inputText value="#{produtoBean.produto.nome}" id="nome" styleClass="form-control"/>
+		</div>
+		<div>
+			<h:outputLabel value="Preço" for="preco" />
+			<h:inputText value="#{produtoBean.produto.preco}" id="preco" styleClass="form-control"/>
+		</div>
+		<div>
+			<h:selectBooleanCheckbox id="disp" value="#{produtoBean.produto.disponivel}" />
+			<h:outputLabel value="Disponivel" for="disp" />
+		</div>
+		<div>
+			<h:commandButton styleClass="btn btn-outline-warning btn-sm" action="#{produtoBean.salvar}" value="salvar" />
+		</div>
+	</h:form>
+	<h:messages />
+</div>
+</h:body>
+   
+</html>
