@@ -6,7 +6,9 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
+import javax.faces.validator.ValidatorException;
 
 import br.com.fiap.ws.service.BebidaService;
 import br.com.fiap.ws.to.Bebida;
@@ -18,6 +20,17 @@ public class BebidaBean {
 	
 	private BebidaService service;
 
+	//Validador customizado para o nome 
+	public void validarNome(FacesContext context,
+			UIComponent component, Object value) {
+		String nome = value.toString();
+		//validação qualquer
+		if(nome.contains("Skol Beats")) {
+			throw new ValidatorException(
+					new FacesMessage("Bebida não aceitavel"));
+		}
+	}
+	
 	@PostConstruct
 	private void init() {
 		bebida = new Bebida();
